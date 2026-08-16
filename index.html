@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <!-- Website Logo / Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Logo and Title -->
+        <div class="brand">
+            <h1>Student Management System</h1>
+        </div>
+
+        <p class="subtitle">CRUD Application</p>
+
+        <!-- Student Form -->
+        <div class="form-container">
+
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+               <input type="hidden" id="studentId">
+
+<div class="input-group">
+    <label for="name">Student Name</label>
+    <input
+        type="text"
+        id="name"
+        placeholder="Enter student name"
+        required
+    >
+</div>
+
+<div class="input-group">
+    <label for="rollNo">Roll Number</label> 
+                    <input
+                        type="text"
+                        id="rollNo"
+                        placeholder="Enter roll number"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="department">Department</label>
+                    <input
+                        type="text"
+                        id="department"
+                        placeholder="Enter department"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter email"
+                        required
+                    >
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    Add Student
+                </button>
+
+                <button
+                    type="button"
+                    id="cancelBtn"
+                    class="cancel-btn"
+                >
+                    Cancel
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Search -->
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search student..."
+            >
+
+        </div>
+
+        <!-- Student Table -->
+        <div class="table-container">
+
+            <h2>Student Records</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Roll Number</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTableBody">
+
+                    <!-- Student records will appear here -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
